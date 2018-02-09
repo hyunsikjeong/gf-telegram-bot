@@ -13,7 +13,7 @@ def init_logger(name, fileLevel=logging.DEBUG, streamLevel=logging.ERROR):
 
     formatter = logging.Formatter('[%(levelname)s|%(filename)s:%(lineno)s] %(asctime)s > %(message)s')
 
-    fileHandler = logging.FileHandler('./log/{}.log'.format(name))
+    fileHandler = logging.FileHandler('./log/{}.log'.format(name), encoding='utf8')
     fileHandler.setLevel(fileLevel)
     fileHandler.setFormatter(formatter)
     logger.addHandler(fileHandler)
