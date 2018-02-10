@@ -156,7 +156,7 @@ def doll(bot, update):
 
 def equip(bot, update):
     try:
-        itime, time = _command_time(update)
+        hour, minute, time = _command_time(update)
 
         if time is None: return
         elif time not in EQUIP_DICT:
