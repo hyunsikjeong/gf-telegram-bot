@@ -63,7 +63,7 @@ class GFTracker(tweepy.StreamListener):
     def on_error(self, status_code):
         logger = logging.getLogger('gftrack')
         logger.error("on_error called: {}".format(status_code))
-        return False
+        return True # Always reconnect
 
 
 # /pin command
