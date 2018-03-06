@@ -28,6 +28,9 @@ class GFTracker(tweepy.StreamListener):
         elif status.in_reply_to_user_id_str is not None and self.userid != status.in_reply_to_user_id:
             logger.debug("In reply to user ID is different: " + status.in_reply_to_user_id_str)
             return 
+        elif hasattr(status, 'retweeted_status'):
+            logger.debug("It is a retweet of another user's tweet: " + status.retweeted_status.user.id_str)
+            return 
         
         tweetid = status.id
         username = status.user.screen_name
