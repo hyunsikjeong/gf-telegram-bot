@@ -1,5 +1,3 @@
-# start.py
-
 from telegram.ext import Updater, CallbackQueryHandler
 import json
 import logging
@@ -24,16 +22,12 @@ def init_logger(name, fileLevel=logging.DEBUG, streamLevel=logging.ERROR):
     streamHandler.setFormatter(formatter)
     logger.addHandler(streamHandler)
 
-if __name__ == "__main__":
-    # LOGGER SETTING
+if __name__ == "__main__":    
     init_logger('gftrack')
     init_logger('command', fileLevel=logging.INFO)
     init_logger('query')
 
-    # LOAD SETTING
     setting = json.load(open('setting.json', 'r'))
-
-    # TELEGRAM BOT SETTING
     updater = Updater(setting['tg_token'])
     dispatcher = updater.dispatcher
 
@@ -51,10 +45,7 @@ if __name__ == "__main__":
 
     for (command_list, command_function) in commands:
         dispatcher.add_handler(exc.ExcCommandHandler(command_list, command_function))
-
     dispatcher.add_handler(CallbackQueryHandler(upgrade.upgrade_callback))
-
-    # BOT POLLING & TWEET STREAMING START
 
     stream.start_tracking(setting, updater)
     updater.start_polling(allowed_updates=['message', 'channel_post', 'callback_query'])

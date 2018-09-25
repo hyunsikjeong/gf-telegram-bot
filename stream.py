@@ -1,5 +1,3 @@
-# stream.py
-
 import sys, traceback
 import logging, json
 import tweepy
@@ -8,9 +6,7 @@ from telegram.error import Unauthorized
 
 ALERT_CHATID_LIST = json.load(open('alert_chatid.json'))
 
-# Tweepy Streaming Listener
 class GFTracker(tweepy.StreamListener):
-
     def __init__(self, userid, updater, api=None):
         super(GFTracker, self).__init__(api=api)
         self.userid = userid
@@ -92,17 +88,12 @@ def unpin(bot, update):
     update.message.reply_text("unpin을 완료했습니다. 다시 사용하고 싶으시다면 pin 명령어를 사용해주세요.")
 
 def start_tracking(setting, updater):
-    # Twitter auth
     auth = tweepy.auth.OAuthHandler(setting['tw_consumer_key'], setting['tw_consumer_secret'])
     auth.set_access_token(setting['tw_access_token'], setting['tw_access_secret'])
 
-    # Screen name to user id
     api = tweepy.API(auth)
     user = api.get_user(screen_name=setting['tw_gf_bot_id'])
     userid = user.id
 
-    # Set stream
     stream = tweepy.Stream(auth, GFTracker(userid, updater), timeout=None)
-
-    # Start filter
     stream.filter([str(userid)], None, async=True)
