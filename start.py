@@ -4,8 +4,9 @@ from telegram.ext import Updater, CallbackQueryHandler
 import json
 import logging
 
-# Custom Modules
-import stream, exc, query
+import exc
+import stream
+from query import *
 
 def init_logger(name, fileLevel=logging.DEBUG, streamLevel=logging.ERROR):
     logger = logging.getLogger(name)
@@ -36,14 +37,14 @@ if __name__ == "__main__":
     updater = Updater(setting['tg_token'])
     dispatcher = updater.dispatcher
 
-    commands = [ (['start', 'help', '도움말', '도움'], query.help),
-                 (['doll', 'ㅇㅎ', '인형'], query.doll),
-                 (['equip', 'ㅈㅂ', '장비'], query.equip),
-                 (['search', 'ㄳ', 'ㄱㅅ', '검색'], query.search),
-                 (['buff', '버프', 'ㅂㅍ'], query.buff),
-                 (['stat', '스탯', 'ㅅㅌ'], query.stat),
-                 (['skill', '스킬', 'ㅅㅋ'], query.skill),
-                 (['upgrade', '개장', 'ㄱㅈ'], query.upgrade),
+    commands = [ (['start', 'help', '도움말', '도움'], help.help),
+                 (['doll', 'ㅇㅎ', '인형'], doll.doll),
+                 (['equip', 'ㅈㅂ', '장비'], equip.equip),
+                 (['search', 'ㄳ', 'ㄱㅅ', '검색'], search.search),
+                 (['buff', '버프', 'ㅂㅍ'], buff.buff),
+                 (['stat', '스탯', 'ㅅㅌ'], stat.stat),
+                 (['skill', '스킬', 'ㅅㅋ'], skill.skill),
+                 (['upgrade', '개장', 'ㄱㅈ'], upgrade.upgrade),
                  (['pin'], stream.pin),
                  (['unpin'], stream.unpin)
                  ]
@@ -51,7 +52,7 @@ if __name__ == "__main__":
     for (command_list, command_function) in commands:
         dispatcher.add_handler(exc.ExcCommandHandler(command_list, command_function))
 
-    dispatcher.add_handler(CallbackQueryHandler(query.upgrade_callback))
+    dispatcher.add_handler(CallbackQueryHandler(upgrade.upgrade_callback))
 
     # BOT POLLING & TWEET STREAMING START
 
