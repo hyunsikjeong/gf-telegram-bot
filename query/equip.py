@@ -1,6 +1,6 @@
 import logging
 
-from .dicts import equip_dict
+from .database import equip_dict
 from . import util
 
 def equip(bot, update):

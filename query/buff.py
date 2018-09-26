@@ -1,6 +1,6 @@
 import logging
 
-from .dicts import search_dict, buff_dict
+from .database import search_dict, buff_dict
 from . import util
 
 BUFF_MESSAGE = """도감 NO. : {0}

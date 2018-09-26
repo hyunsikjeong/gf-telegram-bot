@@ -1,6 +1,6 @@
 import logging
 
-from .dicts import search_dict, skill_dict
+from .database import search_dict, skill_dict
 from . import util
 
 SKILL_MESSAGE = """도감 NO. : {0}

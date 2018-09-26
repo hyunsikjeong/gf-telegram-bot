@@ -1,6 +1,6 @@
 import logging
 
-from .dicts import search_dict
+from .database import search_dict
 from . import util
 
 SEARCH_MESSAGE_WITH_TIME = """도감 NO. : {0}

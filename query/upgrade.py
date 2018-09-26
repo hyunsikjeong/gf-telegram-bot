@@ -1,7 +1,7 @@
 import logging
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from .dicts import search_dict, upgrade_dict, buff_dict
+from .database import search_dict, upgrade_dict, buff_dict
 from . import util
 
 UPGRADE_MESSAGE_1 = """도감 NO. : {0}

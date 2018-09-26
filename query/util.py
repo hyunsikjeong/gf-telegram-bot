@@ -1,7 +1,7 @@
 import logging
 import re
 
-from .dicts import alias_dict
+from .database import alias_dict
 
 def get_command(update):
     logger = logging.getLogger('command')

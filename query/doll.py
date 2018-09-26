@@ -1,6 +1,6 @@
 import logging
 
-from .dicts import doll_dict
+from .database import doll_dict
 from . import util
 
 def doll(bot, update):

@@ -1,6 +1,6 @@
 import logging
 
-from .dicts import search_dict, stat_dict
+from .database import search_dict, stat_dict
 from . import util
 
 STAT_MESSAGE = """도감 NO. : {0}
