@@ -1,8 +1,8 @@
 {
-"tg_token": "Your telegram bot token",
-"tw_consumer_key": "Your Twitter consumer key",
-"tw_consumer_secret": "Your Twitter consumer secret key",
-"tw_access_token": "Your Twitter access token",
-"tw_access_secret": "Your Twitter access secret token",
-"tw_gf_bot_id": "girlsfrontlinek"
+    "tg_token": "Your telegram bot token",
+    "tw_consumer_key": "Your Twitter consumer key",
+    "tw_consumer_secret": "Your Twitter consumer secret key",
+    "tw_access_token": "Your Twitter access token",
+    "tw_access_secret": "Your Twitter access secret token",
+    "tw_gf_bot_id": "girlsfrontlinek"
 }

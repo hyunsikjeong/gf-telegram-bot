@@ -1,226 +1,1586 @@
 {
-"1": {"no": "1", "name": "콜트 리볼버", "class": "4", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:50"},
-"2": {"no": "2", "name": "M1911", "class": "2", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:20"},
-"3": {"no": "3", "name": "M9", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:40"},
-"5": {"no": "5", "name": "나강 리볼버", "class": "2", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:20"},
-"6": {"no": "6", "name": "토카레프", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:45"},
-"7": {"no": "7", "name": "스테츠킨", "class": "4", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:55"},
-"8": {"no": "8", "name": "마카로프", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:40"},
-"9": {"no": "9", "name": "P38", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:20"},
-"10": {"no": "10", "name": "PPK", "class": "2", "type": "HG", "obtain": "제조, 전역 드랍, 업적 보상", "time": "00:22"},
-
-"11": {"no": "11", "name": "P08", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:30"},
-"12": {"no": "12", "name": "C96", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:30"},
-"13": {"no": "13", "name": "92식", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:35"},
-"14": {"no": "14", "name": "아스트라 리볼버", "class": "3", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:40"},
-"15": {"no": "15", "name": "글록 17", "class": "3", "type": "HG", "obtain": "1전역 한정 드랍", "time": "00:00"},
-"16": {"no": "16", "name": "톰슨", "class": "5", "type": "SMG", "obtain": "제조", "time": "02:30"},
-"17": {"no": "17", "name": "M3", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:30"},
-"18": {"no": "18", "name": "MAC-10", "class": "3", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "02:00"},
-"19": {"no": "19", "name": "FMG-9", "class": "3", "type": "SMG", "obtain": "2전역 한정 드랍", "time": "00:00"},
-"20": {"no": "20", "name": "Vector", "class": "5", "type": "SMG", "obtain": "제조, 6-4E 드랍", "time": "02:35"},
-
-"21": {"no": "21", "name": "PPSh-41", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:50"},
-"22": {"no": "22", "name": "PPS-43", "class": "3", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "02:10"},
-"23": {"no": "23", "name": "PP-90", "class": "4", "type": "SMG", "obtain": "제조", "time": "02:20"},
-"24": {"no": "24", "name": "PP-2000", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:10"},
-"25": {"no": "25", "name": "MP40", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍, 업적 달성 보상", "time": "01:30"},
-"26": {"no": "26", "name": "MP5", "class": "4", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "02:20"},
-"27": {"no": "27", "name": "스콜피온", "class": "3", "type": "SMG", "obtain": "제조, 전역 드랍, 1-5전역 클리어 임무 보상, 지휘관 레벨 달성 임무 보상", "time": "02:00"},
-"29": {"no": "29", "name": "스텐 MkII", "class": "3", "type": "SMG", "obtain": "제조, 전역 드랍, 1-1전역 클리어 임무 보상, 지휘관 레벨 달성 임무 보상", "time": "01:40"},
-
-"31": {"no": "31", "name": "베레타 38형", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:30"},
-"32": {"no": "32", "name": "마이크로 우지", "class": "3", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:40"},
-"33": {"no": "33", "name": "m45", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:20"},
-"34": {"no": "34", "name": "M1 개런드", "class": "3", "type": "RF", "obtain": "제조, 전역 드랍", "time": "04:00"},
-"35": {"no": "35", "name": "M1A1", "class": "3", "type": "RF", "obtain": "6전역 한정 드랍", "time": "00:00"},
-"36": {"no": "36", "name": "스프링필드", "class": "4", "type": "RF", "obtain": "제조, 전역 드랍", "time": "04:25"},
-"37": {"no": "37", "name": "M14", "class": "3", "type": "RF", "obtain": "제조, 전역 드랍, 지휘관 레벨 달성 임무 보상", "time": "03:40"},
-"38": {"no": "38", "name": "M21", "class": "3", "type": "RF", "obtain": "4전역 한정 드랍", "time": "00:00"},
-"39": {"no": "39", "name": "모신나강", "class": "4", "type": "RF", "obtain": "제조, 전역 드랍", "time": "04:10"},
-"40": {"no": "40", "name": "SVT-38", "class": "2", "type": "RF", "obtain": "제조, 전역 드랍", "time": "03:30"},
-
-"41": {"no": "41", "name": "시모노프", "class": "2", "type": "RF", "obtain": "제조, 전역 드랍", "time": "03:30"},
-"42": {"no": "42", "name": "PTRD", "class": "4", "type": "RF", "obtain": "제조, 전역 드랍", "time": "04:30"},
-"43": {"no": "43", "name": "SVD", "class": "4", "type": "RF", "obtain": "제조", "time": "03:30"},
-"44": {"no": "44", "name": "SV-98", "class": "3", "type": "RF", "obtain": "제조, 전역 드랍", "time": "03:40"},
-"46": {"no": "46", "name": "Kar98k", "class": "5", "type": "RF", "obtain": "제조, 특별 구원작전 이벤트 전역 드랍, 저체온증 이벤트 붉은 봉투 개봉", "time": "04:40"},
-"47": {"no": "47", "name": "G43", "class": "2", "type": "RF", "obtain": "제조, 전역 드랍", "time": "03:10"},
-"48": {"no": "48", "name": "WA2000", "class": "5", "type": "RF", "obtain": "제조, 0-4 전역 드랍", "time": "04:50"},
-"49": {"no": "49", "name": "56식 반", "class": "3", "type": "RF", "obtain": "저체온증 이벤트 드랍", "time": "00:00"},
-"50": {"no": "50", "name": "리엔필드", "class": "5", "type": "RF", "obtain": "제조", "time": "05:00"},
-
-
-"51": {"no": "51", "name": "FN-49", "class": "2", "type": "RF", "obtain": "제조, 전역 드랍", "time": "03:10"},
-"52": {"no": "52", "name": "BM59", "class": "2", "type": "RF", "obtain": "제조, 전역 드랍", "time": "03:20"},
-"53": {"no": "53", "name": "NTW-20", "class": "5", "type": "RF", "obtain": "제조, 8-4E 전역 드랍", "time": "04:45"},
-"54": {"no": "54", "name": "M16A1", "class": "4", "type": "AR", "obtain": "제조불가, 4-6 클리어 임무 보상 / 메아리이벤트 7-1E 전역 드랍", "time": "00:00"},
-"55": {"no": "55", "name": "M4A1", "class": "4", "type": "AR", "obtain": "제조불가, 2-6 클리어 임무 보상 / 메아리이벤트 7-3E 전역 드랍", "time": "00:00"},
-"56": {"no": "56", "name": "M4 SOPMOD II", "class": "4", "type": "AR", "obtain": "제조불가, 3-3 클리어 임무 보상 / 메아리이벤트 7-5E 전역 드랍", "time": "00:00"},
-"57": {"no": "57", "name": "ST AR-15", "class": "4", "type": "AR", "obtain": "제조불가, 3-6 클리어 임무 보상 / 메아리이벤트 7-2E 전역 드랍", "time": "00:00"},
-"58": {"no": "58", "name": "AK-47", "class": "3", "type": "AR", "obtain": "제조, 전역 드랍, 지휘관 레벨 달성 임무 보상", "time": "03:20"},
-"60": {"no": "60", "name": "AS Val", "class": "3", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:30"},
-"61": {"no": "61", "name": "StG44", "class": "3", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:00"},
-"62": {"no": "62", "name": "G41", "class": "5", "type": "AR", "obtain": "제조, 전역 드랍", "time": "04:05"},
-"63": {"no": "63", "name": "G3", "class": "2", "type": "AR", "obtain": "제조, 전역 드랍", "time": "02:50"},
-"64": {"no": "64", "name": "G36", "class": "4", "type": "AR", "obtain": "제조, 한국서버 사전예약 보상, 특별구호작전X 이벤트 전역 드랍", "time": "03:40"},
-"65": {"no": "65", "name": "HK416", "class": "5", "type": "AR", "obtain": "제조, 5-4E 전역 드랍", "time": "03:55"},
-"66": {"no": "66", "name": "56-1식", "class": "4", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:25"},
-
-"68": {"no": "68", "name": "L85A1", "class": "2", "type": "AR", "obtain": "제조, 전역 드랍", "time": "02:50"},
-"69": {"no": "69", "name": "FAMAS", "class": "4", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:30"},
-"70": {"no": "70", "name": "FNC", "class": "3", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:20"},
-"71": {"no": "71", "name": "갈릴", "class": "2", "type": "AR", "obtain": "제조, 전역 드랍", "time": "02:40"},
-"72": {"no": "72", "name": "TAR-21", "class": "4", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:30"},
-
-"74": {"no": "74", "name": "SIG-510", "class": "2", "type": "AR", "obtain": "제조, 전역 드랍", "time": "02:40"},
-"75": {"no": "75", "name": "M1918", "class": "4", "type": "MG", "obtain": "제조, 전역 드랍", "time": "06:25"},
-
-"77": {"no": "77", "name": "M2HB", "class": "3", "type": "MG", "obtain": "제조, 전역 드랍, 지휘관 레벨 달성 임무 보상", "time": "06:10"},
-"78": {"no": "78", "name": "M60", "class": "4", "type": "MG", "obtain": "제조, 전역 드랍", "time": "06:10"},
-"79": {"no": "79", "name": "M249 SAW", "class": "3", "type": "MG", "obtain": "5전역 한정드랍", "time": "00:00"},
-"80": {"no": "80", "name": "M1919A4", "class": "3", "type": "MG", "obtain": "제조, 전역 드랍", "time": "05:40"},
-"81": {"no": "81", "name": "LWMMG", "class": "2", "type": "MG", "obtain": "제조, 전역 드랍", "time": "05:10"},
-"82": {"no": "82", "name": "DP28", "class": "2", "type": "MG", "obtain": "제조, 전역 드랍", "time": "05:00"},
-
-"84": {"no": "84", "name": "RPD", "class": "3", "type": "MG", "obtain": "로그인 보상, 큐브/큐브+ 이벤트 드랍", "time": "00:00"},
-"85": {"no": "85", "name": "PK", "class": "4", "type": "MG", "obtain": "제조, 전역 드랍", "time": "06:30"},
-"86": {"no": "86", "name": "MG42", "class": "3", "type": "MG", "obtain": "제조, 전역 드랍", "time": "05:50"},
-"87": {"no": "87", "name": "MG34", "class": "2", "type": "MG", "obtain": "제조, 전역 드랍", "time": "05:00"},
-"88": {"no": "88", "name": "MG3", "class": "4", "type": "MG", "obtain": "제조, 전역 드랍", "time": "06:30"},
-"89": {"no": "89", "name": "브렌", "class": "3", "type": "MG", "obtain": "제조, 전역 드랍", "time": "05:20"},
-"90": {"no": "90", "name": "FNP-9", "class": "2", "type": "HG", "obtain": "제조, 전역 드랍, 업적:오 좋구만! 달성 보상", "time": "00:25"},
-"91": {"no": "91", "name": "MP-446", "class": "2", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:25"},
-"92": {"no": "92", "name": "Spectre M4", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:20"},
-"93": {"no": "93", "name": "IDW", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:10"},
-"94": {"no": "94", "name": "64식", "class": "2", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "01:25"},
-"95": {"no": "95", "name": "한양조 88식", "class": "3", "type": "RF", "obtain": "제조", "time": "03:50"},
-"96": {"no": "96", "name": "그리즐리 MkV", "class": "5", "type": "HG", "obtain": "제조", "time": "01:10"},
-"97": {"no": "97", "name": "M950A", "class": "5", "type": "HG", "obtain": "제조", "time": "01:05"},
-"98": {"no": "98", "name": "SPP-1", "class": "4", "type": "HG", "obtain": "제조불가, 큐브/큐브+ 이벤트 진행 보상, 딥 다이브 이벤트전역 드랍", "time": "00:00"},
-"99": {"no": "99", "name": "Mk23", "class": "4", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:50"},
-"100": {"no": "100", "name": "P7", "class": "4", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:55"},
-
-"101": {"no": "101", "name": "UMP9", "class": "4", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "02:15"},
-"102": {"no": "102", "name": "UMP40", "class": "4", "type": "SMG", "obtain": "딥 다이브 이벤트 물자상자 개봉", "time": "00:00"},
-"103": {"no": "103", "name": "UMP45", "class": "4", "type": "SMG", "obtain": "제조, 전역 드랍", "time": "02:15"},
-"104": {"no": "104", "name": "G36C", "class": "5", "type": "SMG", "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉", "time": "02:30"},
-"105": {"no": "105", "name": "OTs-12", "class": "3", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:10"},
-"106": {"no": "106", "name": "FAL", "class": "5", "type": "AR", "obtain": "제조, 저체온증 이벤트 붉은 봉투 개봉", "time": "03:45"},
-"107": {"no": "107", "name": "F2000", "class": "2", "type": "AR", "obtain": "제조, 전역 드랍", "time": "02:45"},
-"108": {"no": "108", "name": "CZ-805", "class": "3", "type": "AR", "obtain": "3전역 한정 드랍", "time": "00:00"},
-"109": {"no": "109", "name": "MG5", "class": "5", "type": "MG", "obtain": "제조, 7-4E 전역 드랍", "time": "06:45"},
-"110": {"no": "110", "name": "FG42", "class": "2", "type": "MG", "obtain": "제조, 전역 드랍", "time": "04:50"},
-
-"111": {"no": "111", "name": "AAT-52", "class": "2", "type": "MG", "obtain": "제조, 전역 드랍", "time": "04:50"},
-"112": {"no": "112", "name": "네게브", "class": "5", "type": "MG", "obtain": "제조", "time": "06:35"},
-"113": {"no": "113", "name": "세르듀코프", "class": "3", "type": "HG", "obtain": "큐브/큐브+ 이벤트 드랍", "time": "00:00"},
-"114": {"no": "114", "name": "웰로드 MkII", "class": "5", "type": "HG", "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉", "time": "01:00"},
-"115": {"no": "115", "name": "수오미", "class": "5", "type": "SMG", "obtain": "제조, 저체온증 이벤트 붉은 봉투 개봉", "time": "02:25"},
-"116": {"no": "116", "name": "Z-62", "class": "3", "type": "SMG", "obtain": "중형 제조, 큐브/큐브+ 이벤트 드랍", "time": "02:05"},
-"117": {"no": "117", "name": "PSG-1", "class": "4", "type": "RF", "obtain": "중형 제조, 큐브/큐브+ 이벤트 드랍", "time": "04:20"},
-"118": {"no": "118", "name": "9A-91", "class": "4", "type": "AR", "obtain": "제조, 전역 드랍", "time": "03:35"},
-"119": {"no": "119", "name": "OTs-14", "class": "5", "type": "AR", "obtain": "큐브/큐브+ 이벤트 진행 보상, 딥 다이브 이벤트 드랍", "time": "00:00"},
-"120": {"no": "120", "name": "ARX-160", "class": "3", "type": "AR", "obtain": "중형 제조, 큐브/큐브+ 이벤트 드랍", "time": "03:15"},
-
-"121": {"no": "121", "name": "Mk48", "class": "4", "type": "MG", "obtain": "제조", "time": "06:20"},
-"122": {"no": "122", "name": "G11", "class": "5", "type": "AR", "obtain": "제조", "time": "04:04"},
-"123": {"no": "123", "name": "P99", "class": "3", "type": "HG", "obtain": "제조", "time": "00:35"},
-"124": {"no": "124", "name": "Super SASS", "class": "3", "type": "RF", "obtain": "로그인 보상, 저체온증 이벤트 드랍", "time": "00:00"},
-"125": {"no": "125", "name": "MG4", "class": "5", "type": "MG", "obtain": "제조, 저체온증 이벤트 붉은 봉투 개봉", "time": "06:40"},
-"126": {"no": "126", "name": "NZ75", "class": "5", "type": "HG", "obtain": "제조, 2017년 추석 이벤트 출석 보상, 저체온증 이벤트 드랍", "time": "01:05"},
-"127": {"no": "127", "name": "79식", "class": "5", "type": "SMG", "obtain": "제조, 특별구호작전X 이벤트 전역 드랍", "time": "02:35"},
-"128": {"no": "128", "name": "M99", "class": "5", "type": "RF", "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉, 특별구호작전X 이벤트 전역 드랍", "time": "04:55"},
-"129": {"no": "129", "name": "95식", "class": "5", "type": "AR", "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉", "time": "03:50"},
-"130": {"no": "130", "name": "97식", "class": "5", "type": "AR", "obtain": "제조", "time": "03:50"},
-
-"131": {"no": "131", "name": "EVO 3", "class": "3", "type": "SMG", "obtain": "로그인 보상, 저체온증 이벤트 드랍", "time": "00:00"},
-"132": {"no": "132", "name": "59식", "class": "3", "type": "HG", "obtain": "로그인 보상, 저체온증 이벤트 드랍", "time": "00:00"},
-"133": {"no": "133", "name": "63식", "class": "2", "type": "AR", "obtain": "제조, 전역 드랍", "time": "02:45"},
-"134": {"no": "134", "name": "AR70", "class": "3", "type": "AR", "obtain": "로그인 보상, 저체온증 이벤트 드랍", "time": "00:00"},
-"135": {"no": "135", "name": "SR-3MP", "class": "5", "type": "SMG", "obtain": "제조", "time": "02:33"},
-"136": {"no": "136", "name": "PP-19", "class": "4", "type": "SMG", "obtain": "현재 한국 서버 획득 불가", "time": "00:00"},
-"137": {"no": "137", "name": "PP-19-01", "class": "4", "type": "SMG", "obtain": "제조", "time": "02:18"},
-"138": {"no": "138", "name": "6P62", "class": "3", "type": "AR", "obtain": "한여름의 축제 이벤트 출석 보상, 딥 다이브 이벤트 드랍", "time": "00:00"},
-"139": {"no": "139", "name": "Bren Ten", "class": "2", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:28"},
-"140": {"no": "140", "name": "PSM", "class": "3", "type": "HG", "obtain": "7지역 한정 드랍", "time": "00:00"},
-
-"141": {"no": "141", "name": "USP Compact", "class": "2", "type": "HG", "obtain": "제조, 전역 드랍", "time": "00:28"},
-"142": {"no": "142", "name": "Five-seveN", "class": "5", "type": "HG", "obtain": "큐브/큐브+ 이벤트 드랍", "time": "00:00"},
-"143": {"no": "143", "name": "RO635", "class": "5", "type": "SMG", "obtain": "7-6전역 클리어 보상", "time": "00:00"},
-"144": {"no": "144", "name": "MT-9", "class": "3", "type": "SMG", "obtain": "딥 다이브 이벤트 드랍", "time": "00:00"},
-"145": {"no": "145", "name": "OTs-44", "class": "3", "type": "RF", "obtain": "중형 제조, 저체온증 이벤트 드랍", "time": "03:50"},
-"146": {"no": "146", "name": "G28", "class": "4", "type": "RF", "obtain": "중형 제조, 저체온증 이벤트 드랍", "time": "04:20"},
-"147": {"no": "147", "name": "SSG 69", "class": "3", "type": "RF", "obtain": "딥 다이브 이벤트 드랍,", "time": "00:00"},
-"148": {"no": "148", "name": "IWS 2000", "class": "5", "type": "RF", "obtain": "제조, 특별구호작전X 이벤트 전역 드랍", "time": "04:52"},
-"149": {"no": "149", "name": "AEK-999", "class": "4", "type": "MG", "obtain": "제조, 특별구호작전X 이벤트 전역 드랍", "time": "06:20"},
-"150": {"no": "150", "name": "시프카", "class": "4", "type": "SMG", "obtain": "제조", "time": "02:18"},
-
-
-"151": {"no": "151", "name": "M1887", "class": "5", "type": "SG", "obtain": "저체온증 이벤트 진행 보상", "time": "00:00"},
-"152": {"no": "152", "name": "M1897", "class": "3", "type": "SG", "obtain": "중형 제조", "time": "07:30"},
-"153": {"no": "153", "name": "M37", "class": "4", "type": "SG", "obtain": "중형 제조", "time": "07:45"},
-"154": {"no": "154", "name": "M500", "class": "3", "type": "SG", "obtain": "중형 제조", "time": "07:20"},
-"155": {"no": "155", "name": "M590", "class": "4", "type": "SG", "obtain": "중형 제조", "time": "07:40"},
-"156": {"no": "156", "name": "Super-Shorty", "class": "4", "type": "SG", "obtain": "중형 제조", "time": "07:50"},
-"157": {"no": "157", "name": "KSG", "class": "5", "type": "SG", "obtain": "중형 제조", "time": "08:00"},
-"158": {"no": "158", "name": "KS-23", "class": "3", "type": "SG", "obtain": "중형 제조", "time": "07:25"},
-"159": {"no": "159", "name": "RMB-93", "class": "3", "type": "SG", "obtain": "중형 제조", "time": "07:30"},
-
-"160": {"no": "160", "name": "Saiga-12", "class": "5", "type": "SG", "obtain": "중형 제조", "time": "08:05"},
-"161": {"no": "161", "name": "97식 산탄총", "class": "4", "type": "SG", "obtain": "업적:와일드 암즈 달성 보상", "time": "00:00"},
-"162": {"no": "162", "name": "SPAS-12", "class": "4", "type": "SG", "obtain": "중형 제조", "time": "07:40"},
-"166": {"no": "166", "name": "CZ75", "class": "5", "type": "HG", "obtain": "특별구호작전X 이벤트 전역 드랍", "time": "00:00"},
-"167": {"no": "167", "name": "HK45", "class": "3", "type": "HG", "obtain": "로그인 보상, 딥 다이브 이벤트 드랍", "time": "00:00"},
-"167": {"no": "167", "name": "HK45", "class": "3", "type": "HG", "obtain": "로그인 보상, 딥 다이브 이벤트 드랍", "time": "00:00"},
-"168": {"no": "168", "name": "Spitfire", "class": "4", "type": "HG", "obtain": "제조", "time": "00:52"},
-"169": {"no": "169", "name": "SCW", "class": "3", "type": "SMG", "obtain": "8전역 한정드랍", "time": "00:00"},
-"170": {"no": "170", "name": "ASh-12.7", "class": "3", "type": "AR", "obtain": "로그인 보상, 딥 다이브 이벤트 드랍", "time": "00:00"},
-
-"171": {"no": "171", "name": "리베롤", "class": "4", "type": "AR", "obtain": "제조", "time": "03:40"},
-"172": {"no": "172", "name": "RFB", "class": "5", "type": "AR", "obtain": "제조", "time": "03:58"},
-"173": {"no": "173", "name": "PKP", "class": "5", "type": "MG", "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉", "time": "06:50"},
-"174": {"no": "174", "name": "81식 카빈", "class": "3", "type": "RF", "obtain": "로그인 보상, 딥 다이브 이벤트 드랍", "time": "00:00"},
-"175": {"no": "175", "name": "ART556", "class": "5", "type": "AR", "obtain": "특수 임무 보상", "time": "00:00"},
-"176": {"no": "176", "name": "TMP", "class": "3", "type": "SMG", "obtain": "로그인 보상", "time": "00:00"},
-"177": {"no": "177", "name": "KLIN", "class": "4", "type": "SMG", "obtain": "딥 다이브 이벤트 진행 보상", "time": "00:00"},
-"178": {"no": "178", "name": "F1", "class": "3", "type": "SMG", "obtain": "중형제조", "time": "01:50"},
-"179": {"no": "179", "name": "DSR-50", "class": "5", "type": "RF", "obtain": "딥 다이브 이벤트 진행 보상", "time": "00:00"},
-"180": {"no": "180", "name": "PzB39", "class": "4", "type": "RF", "obtain": "중형제조, 딥 다이브 이벤트 드랍", "time": "04:30"},
-
-"181": {"no": "181", "name": "T91", "class": "5", "type": "AR", "obtain": "제조", "time": "03:48"},
-"182": {"no": "182", "name": "wz.29", "class": "3", "type": "RF", "obtain": "로그인 보상", "time": "00:00"},
-"183": {"no": "183", "name": "컨텐더", "class": "5", "type": "HG", "obtain": "제조", "time": "01:02"},
-"184": {"no": "184", "name": "T-5000", "class": "4", "type": "RF", "obtain": "제조", "time": "04:10"},
-"185": {"no": "185", "name": "아멜리", "class": "4", "type": "MG", "obtain": "제조", "time": "06:25"},
-"186": {"no": "186", "name": "P226", "class": "3", "type": "HG", "obtain": "로그인 보상", "time": "00:00"},
-"187": {"no": "187", "name": "AK5", "class": "4", "type": "AR", "obtain": "9전역 한정드랍", "time": "00:00"},
-"188": {"no": "188", "name": "S.A.T.8", "class": "5", "type": "SG", "obtain": "중형제조", "time": "08:10"},
-"189": {"no": "189", "name": "USAS-12", "class": "4", "type": "SG", "obtain": "중형제조", "time": "07:55"},
-"190": {"no": "190", "name": "NS2000", "class": "3", "type": "SG", "obtain": "중형제조", "time": "07:15"},
-
-
-"191": {"no": "191", "name": "M12", "class": "3", "type": "SMG", "obtain": "로그인 보상", "time": "00:00"},
-"192": {"no": "192", "name": "JS05", "class": "5", "type": "RF", "obtain": "황금달빛 이벤트 포인트 보상", "time": "00:00"},
-"193": {"no": "193", "name": "T65", "class": "3", "type": "HG", "obtain": "로그인 보상", "time": "00:00"},
-"194": {"no": "194", "name": "K2", "class": "5", "type": "AR", "obtain": "제조", "time": "03:52"},
-"195": {"no": "195", "name": "HK23", "class": "3", "type": "MG", "obtain": "로그인 보상", "time": "00:00"},
-"196": {"no": "196", "name": "Zas M21", "class": "5", "type": "AR", "obtain": "제조", "time": "04:25"},
-"197": {"no": "197", "name": "카르카노 M1891", "class": "5", "type": "RF", "obtain": "제조", "time": "04:38"},
-"198": {"no": "198", "name": "카르카노 M91/38", "class": "5", "type": "RF", "obtain": "제조", "time": "04:42"},
-"199": {"no": "199", "name": "80식", "class": "4", "type": "MG", "obtain": "제조", "time": "06:15"},
-
-"201": {"no": "201", "name": "게파드 M1", "class": "3", "type": "RF", "obtain": "2018년 1월 출석 보상", "time": "00:00"},
-"205": {"no": "205", "name": "AN-94", "class": "5", "type": "AR", "obtain": "제조", "time": "04:09"},
-"206": {"no": "206", "name": "AK-12", "class": "5", "type": "AR", "obtain": "제조", "time": "04:12"},
-
-"1001": {"no": "1001", "name": "노엘", "class": "EXTRA", "type": "HG", "obtain": "헌팅래빗 이벤트 드랍, 마력원소 개봉", "time": "00:00"},
-"1002": {"no": "1002", "name": "엘펠트", "class": "EXTRA", "type": "MG", "obtain": "헌팅래빗 이벤트 진행 보상", "time": "00:00"},
-"1003": {"no": "1003", "name": "키아나", "class": "EXTRA", "type": "HG", "obtain": "붕괴학원2 콜라보 이벤트 진행 보상", "time": "00:00"},
-"1004": {"no": "1004", "name": "메이", "class": "EXTRA", "type": "RF", "obtain": "붕괴학원2 콜라보 이벤트 드랍", "time": "00:00"},
-"1005": {"no": "1005", "name": "브로냐", "class": "EXTRA", "type": "RF", "obtain": "붕괴학원2 콜라보 이벤트 드랍", "time": "00:00"},
-"1006": {"no": "1006", "name": "테레사", "class": "EXTRA", "type": "HG", "obtain": "붕괴학원2 콜라보 이벤트 상점 구매", "time": "00:00"},
-"1007": {"no": "1007", "name": "히메코", "class": "EXTRA", "type": "AR", "obtain": "붕괴학원2 콜라보 이벤트 진행 보상", "time": "00:00"},
-"1008": {"no": "1008", "name": "제레", "class": "EXTRA", "type": "SG", "obtain": "붕괴학원2 콜라보 이벤트 상점 구매", "time": "00:00"}
-
+    "1": {
+        "class": "4",
+        "name": "콜트 리볼버",
+        "no": "1",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:50",
+        "type": "HG"
+    },
+    "10": {
+        "class": "2",
+        "name": "PPK",
+        "no": "10",
+        "obtain": "제조, 전역 드랍, 업적 보상",
+        "time": "00:22",
+        "type": "HG"
+    },
+    "100": {
+        "class": "4",
+        "name": "P7",
+        "no": "100",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:55",
+        "type": "HG"
+    },
+    "1001": {
+        "class": "EXTRA",
+        "name": "노엘",
+        "no": "1001",
+        "obtain": "헌팅래빗 이벤트 드랍, 마력원소 개봉",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "1002": {
+        "class": "EXTRA",
+        "name": "엘펠트",
+        "no": "1002",
+        "obtain": "헌팅래빗 이벤트 진행 보상",
+        "time": "00:00",
+        "type": "MG"
+    },
+    "1003": {
+        "class": "EXTRA",
+        "name": "키아나",
+        "no": "1003",
+        "obtain": "붕괴학원2 콜라보 이벤트 진행 보상",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "1004": {
+        "class": "EXTRA",
+        "name": "메이",
+        "no": "1004",
+        "obtain": "붕괴학원2 콜라보 이벤트 드랍",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "1005": {
+        "class": "EXTRA",
+        "name": "브로냐",
+        "no": "1005",
+        "obtain": "붕괴학원2 콜라보 이벤트 드랍",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "1006": {
+        "class": "EXTRA",
+        "name": "테레사",
+        "no": "1006",
+        "obtain": "붕괴학원2 콜라보 이벤트 상점 구매",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "1007": {
+        "class": "EXTRA",
+        "name": "히메코",
+        "no": "1007",
+        "obtain": "붕괴학원2 콜라보 이벤트 진행 보상",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "1008": {
+        "class": "EXTRA",
+        "name": "제레",
+        "no": "1008",
+        "obtain": "붕괴학원2 콜라보 이벤트 상점 구매",
+        "time": "00:00",
+        "type": "SG"
+    },
+    "101": {
+        "class": "4",
+        "name": "UMP9",
+        "no": "101",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:15",
+        "type": "SMG"
+    },
+    "102": {
+        "class": "4",
+        "name": "UMP40",
+        "no": "102",
+        "obtain": "딥 다이브 이벤트 물자상자 개봉",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "103": {
+        "class": "4",
+        "name": "UMP45",
+        "no": "103",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:15",
+        "type": "SMG"
+    },
+    "104": {
+        "class": "5",
+        "name": "G36C",
+        "no": "104",
+        "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉",
+        "time": "02:30",
+        "type": "SMG"
+    },
+    "105": {
+        "class": "3",
+        "name": "OTs-12",
+        "no": "105",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:10",
+        "type": "AR"
+    },
+    "106": {
+        "class": "5",
+        "name": "FAL",
+        "no": "106",
+        "obtain": "제조, 저체온증 이벤트 붉은 봉투 개봉",
+        "time": "03:45",
+        "type": "AR"
+    },
+    "107": {
+        "class": "2",
+        "name": "F2000",
+        "no": "107",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:45",
+        "type": "AR"
+    },
+    "108": {
+        "class": "3",
+        "name": "CZ-805",
+        "no": "108",
+        "obtain": "3전역 한정 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "109": {
+        "class": "5",
+        "name": "MG5",
+        "no": "109",
+        "obtain": "제조, 7-4E 전역 드랍",
+        "time": "06:45",
+        "type": "MG"
+    },
+    "11": {
+        "class": "3",
+        "name": "P08",
+        "no": "11",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:30",
+        "type": "HG"
+    },
+    "110": {
+        "class": "2",
+        "name": "FG42",
+        "no": "110",
+        "obtain": "제조, 전역 드랍",
+        "time": "04:50",
+        "type": "MG"
+    },
+    "111": {
+        "class": "2",
+        "name": "AAT-52",
+        "no": "111",
+        "obtain": "제조, 전역 드랍",
+        "time": "04:50",
+        "type": "MG"
+    },
+    "112": {
+        "class": "5",
+        "name": "네게브",
+        "no": "112",
+        "obtain": "제조",
+        "time": "06:35",
+        "type": "MG"
+    },
+    "113": {
+        "class": "3",
+        "name": "세르듀코프",
+        "no": "113",
+        "obtain": "큐브/큐브+ 이벤트 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "114": {
+        "class": "5",
+        "name": "웰로드 MkII",
+        "no": "114",
+        "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉",
+        "time": "01:00",
+        "type": "HG"
+    },
+    "115": {
+        "class": "5",
+        "name": "수오미",
+        "no": "115",
+        "obtain": "제조, 저체온증 이벤트 붉은 봉투 개봉",
+        "time": "02:25",
+        "type": "SMG"
+    },
+    "116": {
+        "class": "3",
+        "name": "Z-62",
+        "no": "116",
+        "obtain": "중형 제조, 큐브/큐브+ 이벤트 드랍",
+        "time": "02:05",
+        "type": "SMG"
+    },
+    "117": {
+        "class": "4",
+        "name": "PSG-1",
+        "no": "117",
+        "obtain": "중형 제조, 큐브/큐브+ 이벤트 드랍",
+        "time": "04:20",
+        "type": "RF"
+    },
+    "118": {
+        "class": "4",
+        "name": "9A-91",
+        "no": "118",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:35",
+        "type": "AR"
+    },
+    "119": {
+        "class": "5",
+        "name": "OTs-14",
+        "no": "119",
+        "obtain": "큐브/큐브+ 이벤트 진행 보상, 딥 다이브 이벤트 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "12": {
+        "class": "3",
+        "name": "C96",
+        "no": "12",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:30",
+        "type": "HG"
+    },
+    "120": {
+        "class": "3",
+        "name": "ARX-160",
+        "no": "120",
+        "obtain": "중형 제조, 큐브/큐브+ 이벤트 드랍",
+        "time": "03:15",
+        "type": "AR"
+    },
+    "121": {
+        "class": "4",
+        "name": "Mk48",
+        "no": "121",
+        "obtain": "제조",
+        "time": "06:20",
+        "type": "MG"
+    },
+    "122": {
+        "class": "5",
+        "name": "G11",
+        "no": "122",
+        "obtain": "제조",
+        "time": "04:04",
+        "type": "AR"
+    },
+    "123": {
+        "class": "3",
+        "name": "P99",
+        "no": "123",
+        "obtain": "제조",
+        "time": "00:35",
+        "type": "HG"
+    },
+    "124": {
+        "class": "3",
+        "name": "Super SASS",
+        "no": "124",
+        "obtain": "로그인 보상, 저체온증 이벤트 드랍",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "125": {
+        "class": "5",
+        "name": "MG4",
+        "no": "125",
+        "obtain": "제조, 저체온증 이벤트 붉은 봉투 개봉",
+        "time": "06:40",
+        "type": "MG"
+    },
+    "126": {
+        "class": "5",
+        "name": "NZ75",
+        "no": "126",
+        "obtain": "제조, 2017년 추석 이벤트 출석 보상, 저체온증 이벤트 드랍",
+        "time": "01:05",
+        "type": "HG"
+    },
+    "127": {
+        "class": "5",
+        "name": "79식",
+        "no": "127",
+        "obtain": "제조, 특별구호작전X 이벤트 전역 드랍",
+        "time": "02:35",
+        "type": "SMG"
+    },
+    "128": {
+        "class": "5",
+        "name": "M99",
+        "no": "128",
+        "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉, 특별구호작전X 이벤트 전역 드랍",
+        "time": "04:55",
+        "type": "RF"
+    },
+    "129": {
+        "class": "5",
+        "name": "95식",
+        "no": "129",
+        "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉",
+        "time": "03:50",
+        "type": "AR"
+    },
+    "13": {
+        "class": "3",
+        "name": "92식",
+        "no": "13",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:35",
+        "type": "HG"
+    },
+    "130": {
+        "class": "5",
+        "name": "97식",
+        "no": "130",
+        "obtain": "제조",
+        "time": "03:50",
+        "type": "AR"
+    },
+    "131": {
+        "class": "3",
+        "name": "EVO 3",
+        "no": "131",
+        "obtain": "로그인 보상, 저체온증 이벤트 드랍",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "132": {
+        "class": "3",
+        "name": "59식",
+        "no": "132",
+        "obtain": "로그인 보상, 저체온증 이벤트 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "133": {
+        "class": "2",
+        "name": "63식",
+        "no": "133",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:45",
+        "type": "AR"
+    },
+    "134": {
+        "class": "3",
+        "name": "AR70",
+        "no": "134",
+        "obtain": "로그인 보상, 저체온증 이벤트 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "135": {
+        "class": "5",
+        "name": "SR-3MP",
+        "no": "135",
+        "obtain": "제조",
+        "time": "02:33",
+        "type": "SMG"
+    },
+    "136": {
+        "class": "4",
+        "name": "PP-19",
+        "no": "136",
+        "obtain": "현재 한국 서버 획득 불가",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "137": {
+        "class": "4",
+        "name": "PP-19-01",
+        "no": "137",
+        "obtain": "제조",
+        "time": "02:18",
+        "type": "SMG"
+    },
+    "138": {
+        "class": "3",
+        "name": "6P62",
+        "no": "138",
+        "obtain": "한여름의 축제 이벤트 출석 보상, 딥 다이브 이벤트 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "139": {
+        "class": "2",
+        "name": "Bren Ten",
+        "no": "139",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:28",
+        "type": "HG"
+    },
+    "14": {
+        "class": "3",
+        "name": "아스트라 리볼버",
+        "no": "14",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:40",
+        "type": "HG"
+    },
+    "140": {
+        "class": "3",
+        "name": "PSM",
+        "no": "140",
+        "obtain": "7지역 한정 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "141": {
+        "class": "2",
+        "name": "USP Compact",
+        "no": "141",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:28",
+        "type": "HG"
+    },
+    "142": {
+        "class": "5",
+        "name": "Five-seveN",
+        "no": "142",
+        "obtain": "큐브/큐브+ 이벤트 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "143": {
+        "class": "5",
+        "name": "RO635",
+        "no": "143",
+        "obtain": "7-6전역 클리어 보상",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "144": {
+        "class": "3",
+        "name": "MT-9",
+        "no": "144",
+        "obtain": "딥 다이브 이벤트 드랍",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "145": {
+        "class": "3",
+        "name": "OTs-44",
+        "no": "145",
+        "obtain": "중형 제조, 저체온증 이벤트 드랍",
+        "time": "03:50",
+        "type": "RF"
+    },
+    "146": {
+        "class": "4",
+        "name": "G28",
+        "no": "146",
+        "obtain": "중형 제조, 저체온증 이벤트 드랍",
+        "time": "04:20",
+        "type": "RF"
+    },
+    "147": {
+        "class": "3",
+        "name": "SSG 69",
+        "no": "147",
+        "obtain": "딥 다이브 이벤트 드랍,",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "148": {
+        "class": "5",
+        "name": "IWS 2000",
+        "no": "148",
+        "obtain": "제조, 특별구호작전X 이벤트 전역 드랍",
+        "time": "04:52",
+        "type": "RF"
+    },
+    "149": {
+        "class": "4",
+        "name": "AEK-999",
+        "no": "149",
+        "obtain": "제조, 특별구호작전X 이벤트 전역 드랍",
+        "time": "06:20",
+        "type": "MG"
+    },
+    "15": {
+        "class": "3",
+        "name": "글록 17",
+        "no": "15",
+        "obtain": "1전역 한정 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "150": {
+        "class": "4",
+        "name": "시프카",
+        "no": "150",
+        "obtain": "제조",
+        "time": "02:18",
+        "type": "SMG"
+    },
+    "151": {
+        "class": "5",
+        "name": "M1887",
+        "no": "151",
+        "obtain": "저체온증 이벤트 진행 보상",
+        "time": "00:00",
+        "type": "SG"
+    },
+    "152": {
+        "class": "3",
+        "name": "M1897",
+        "no": "152",
+        "obtain": "중형 제조",
+        "time": "07:30",
+        "type": "SG"
+    },
+    "153": {
+        "class": "4",
+        "name": "M37",
+        "no": "153",
+        "obtain": "중형 제조",
+        "time": "07:45",
+        "type": "SG"
+    },
+    "154": {
+        "class": "3",
+        "name": "M500",
+        "no": "154",
+        "obtain": "중형 제조",
+        "time": "07:20",
+        "type": "SG"
+    },
+    "155": {
+        "class": "4",
+        "name": "M590",
+        "no": "155",
+        "obtain": "중형 제조",
+        "time": "07:40",
+        "type": "SG"
+    },
+    "156": {
+        "class": "4",
+        "name": "Super-Shorty",
+        "no": "156",
+        "obtain": "중형 제조",
+        "time": "07:50",
+        "type": "SG"
+    },
+    "157": {
+        "class": "5",
+        "name": "KSG",
+        "no": "157",
+        "obtain": "중형 제조",
+        "time": "08:00",
+        "type": "SG"
+    },
+    "158": {
+        "class": "3",
+        "name": "KS-23",
+        "no": "158",
+        "obtain": "중형 제조",
+        "time": "07:25",
+        "type": "SG"
+    },
+    "159": {
+        "class": "3",
+        "name": "RMB-93",
+        "no": "159",
+        "obtain": "중형 제조",
+        "time": "07:30",
+        "type": "SG"
+    },
+    "16": {
+        "class": "5",
+        "name": "톰슨",
+        "no": "16",
+        "obtain": "제조",
+        "time": "02:30",
+        "type": "SMG"
+    },
+    "160": {
+        "class": "5",
+        "name": "Saiga-12",
+        "no": "160",
+        "obtain": "중형 제조",
+        "time": "08:05",
+        "type": "SG"
+    },
+    "161": {
+        "class": "4",
+        "name": "97식 산탄총",
+        "no": "161",
+        "obtain": "업적:와일드 암즈 달성 보상",
+        "time": "00:00",
+        "type": "SG"
+    },
+    "162": {
+        "class": "4",
+        "name": "SPAS-12",
+        "no": "162",
+        "obtain": "중형 제조",
+        "time": "07:40",
+        "type": "SG"
+    },
+    "166": {
+        "class": "5",
+        "name": "CZ75",
+        "no": "166",
+        "obtain": "특별구호작전X 이벤트 전역 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "167": {
+        "class": "3",
+        "name": "HK45",
+        "no": "167",
+        "obtain": "로그인 보상, 딥 다이브 이벤트 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "168": {
+        "class": "4",
+        "name": "Spitfire",
+        "no": "168",
+        "obtain": "제조",
+        "time": "00:52",
+        "type": "HG"
+    },
+    "169": {
+        "class": "3",
+        "name": "SCW",
+        "no": "169",
+        "obtain": "8전역 한정드랍",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "17": {
+        "class": "2",
+        "name": "M3",
+        "no": "17",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:30",
+        "type": "SMG"
+    },
+    "170": {
+        "class": "3",
+        "name": "ASh-12.7",
+        "no": "170",
+        "obtain": "로그인 보상, 딥 다이브 이벤트 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "171": {
+        "class": "4",
+        "name": "리베롤",
+        "no": "171",
+        "obtain": "제조",
+        "time": "03:40",
+        "type": "AR"
+    },
+    "172": {
+        "class": "5",
+        "name": "RFB",
+        "no": "172",
+        "obtain": "제조",
+        "time": "03:58",
+        "type": "AR"
+    },
+    "173": {
+        "class": "5",
+        "name": "PKP",
+        "no": "173",
+        "obtain": "제조, 딥 다이브 이벤트 물자상자 개봉",
+        "time": "06:50",
+        "type": "MG"
+    },
+    "174": {
+        "class": "3",
+        "name": "81식 카빈",
+        "no": "174",
+        "obtain": "로그인 보상, 딥 다이브 이벤트 드랍",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "175": {
+        "class": "5",
+        "name": "ART556",
+        "no": "175",
+        "obtain": "특수 임무 보상",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "176": {
+        "class": "3",
+        "name": "TMP",
+        "no": "176",
+        "obtain": "로그인 보상",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "177": {
+        "class": "4",
+        "name": "KLIN",
+        "no": "177",
+        "obtain": "딥 다이브 이벤트 진행 보상",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "178": {
+        "class": "3",
+        "name": "F1",
+        "no": "178",
+        "obtain": "중형제조",
+        "time": "01:50",
+        "type": "SMG"
+    },
+    "179": {
+        "class": "5",
+        "name": "DSR-50",
+        "no": "179",
+        "obtain": "딥 다이브 이벤트 진행 보상",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "18": {
+        "class": "3",
+        "name": "MAC-10",
+        "no": "18",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:00",
+        "type": "SMG"
+    },
+    "180": {
+        "class": "4",
+        "name": "PzB39",
+        "no": "180",
+        "obtain": "중형제조, 딥 다이브 이벤트 드랍",
+        "time": "04:30",
+        "type": "RF"
+    },
+    "181": {
+        "class": "5",
+        "name": "T91",
+        "no": "181",
+        "obtain": "제조",
+        "time": "03:48",
+        "type": "AR"
+    },
+    "182": {
+        "class": "3",
+        "name": "wz.29",
+        "no": "182",
+        "obtain": "로그인 보상",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "183": {
+        "class": "5",
+        "name": "컨텐더",
+        "no": "183",
+        "obtain": "제조",
+        "time": "01:02",
+        "type": "HG"
+    },
+    "184": {
+        "class": "4",
+        "name": "T-5000",
+        "no": "184",
+        "obtain": "제조",
+        "time": "04:10",
+        "type": "RF"
+    },
+    "185": {
+        "class": "4",
+        "name": "아멜리",
+        "no": "185",
+        "obtain": "제조",
+        "time": "06:25",
+        "type": "MG"
+    },
+    "186": {
+        "class": "3",
+        "name": "P226",
+        "no": "186",
+        "obtain": "로그인 보상",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "187": {
+        "class": "4",
+        "name": "AK5",
+        "no": "187",
+        "obtain": "9전역 한정드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "188": {
+        "class": "5",
+        "name": "S.A.T.8",
+        "no": "188",
+        "obtain": "중형제조",
+        "time": "08:10",
+        "type": "SG"
+    },
+    "189": {
+        "class": "4",
+        "name": "USAS-12",
+        "no": "189",
+        "obtain": "중형제조",
+        "time": "07:55",
+        "type": "SG"
+    },
+    "19": {
+        "class": "3",
+        "name": "FMG-9",
+        "no": "19",
+        "obtain": "2전역 한정 드랍",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "190": {
+        "class": "3",
+        "name": "NS2000",
+        "no": "190",
+        "obtain": "중형제조",
+        "time": "07:15",
+        "type": "SG"
+    },
+    "191": {
+        "class": "3",
+        "name": "M12",
+        "no": "191",
+        "obtain": "로그인 보상",
+        "time": "00:00",
+        "type": "SMG"
+    },
+    "192": {
+        "class": "5",
+        "name": "JS05",
+        "no": "192",
+        "obtain": "황금달빛 이벤트 포인트 보상",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "193": {
+        "class": "3",
+        "name": "T65",
+        "no": "193",
+        "obtain": "로그인 보상",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "194": {
+        "class": "5",
+        "name": "K2",
+        "no": "194",
+        "obtain": "제조",
+        "time": "03:52",
+        "type": "AR"
+    },
+    "195": {
+        "class": "3",
+        "name": "HK23",
+        "no": "195",
+        "obtain": "로그인 보상",
+        "time": "00:00",
+        "type": "MG"
+    },
+    "196": {
+        "class": "5",
+        "name": "Zas M21",
+        "no": "196",
+        "obtain": "제조",
+        "time": "04:25",
+        "type": "AR"
+    },
+    "197": {
+        "class": "5",
+        "name": "카르카노 M1891",
+        "no": "197",
+        "obtain": "제조",
+        "time": "04:38",
+        "type": "RF"
+    },
+    "198": {
+        "class": "5",
+        "name": "카르카노 M91/38",
+        "no": "198",
+        "obtain": "제조",
+        "time": "04:42",
+        "type": "RF"
+    },
+    "199": {
+        "class": "4",
+        "name": "80식",
+        "no": "199",
+        "obtain": "제조",
+        "time": "06:15",
+        "type": "MG"
+    },
+    "2": {
+        "class": "2",
+        "name": "M1911",
+        "no": "2",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:20",
+        "type": "HG"
+    },
+    "20": {
+        "class": "5",
+        "name": "Vector",
+        "no": "20",
+        "obtain": "제조, 6-4E 드랍",
+        "time": "02:35",
+        "type": "SMG"
+    },
+    "201": {
+        "class": "3",
+        "name": "게파드 M1",
+        "no": "201",
+        "obtain": "2018년 1월 출석 보상",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "205": {
+        "class": "5",
+        "name": "AN-94",
+        "no": "205",
+        "obtain": "제조",
+        "time": "04:09",
+        "type": "AR"
+    },
+    "206": {
+        "class": "5",
+        "name": "AK-12",
+        "no": "206",
+        "obtain": "제조",
+        "time": "04:12",
+        "type": "AR"
+    },
+    "21": {
+        "class": "2",
+        "name": "PPSh-41",
+        "no": "21",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:50",
+        "type": "SMG"
+    },
+    "22": {
+        "class": "3",
+        "name": "PPS-43",
+        "no": "22",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:10",
+        "type": "SMG"
+    },
+    "23": {
+        "class": "4",
+        "name": "PP-90",
+        "no": "23",
+        "obtain": "제조",
+        "time": "02:20",
+        "type": "SMG"
+    },
+    "24": {
+        "class": "2",
+        "name": "PP-2000",
+        "no": "24",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:10",
+        "type": "SMG"
+    },
+    "25": {
+        "class": "2",
+        "name": "MP40",
+        "no": "25",
+        "obtain": "제조, 전역 드랍, 업적 달성 보상",
+        "time": "01:30",
+        "type": "SMG"
+    },
+    "26": {
+        "class": "4",
+        "name": "MP5",
+        "no": "26",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:20",
+        "type": "SMG"
+    },
+    "27": {
+        "class": "3",
+        "name": "스콜피온",
+        "no": "27",
+        "obtain": "제조, 전역 드랍, 1-5전역 클리어 임무 보상, 지휘관 레벨 달성 임무 보상",
+        "time": "02:00",
+        "type": "SMG"
+    },
+    "29": {
+        "class": "3",
+        "name": "스텐 MkII",
+        "no": "29",
+        "obtain": "제조, 전역 드랍, 1-1전역 클리어 임무 보상, 지휘관 레벨 달성 임무 보상",
+        "time": "01:40",
+        "type": "SMG"
+    },
+    "3": {
+        "class": "3",
+        "name": "M9",
+        "no": "3",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:40",
+        "type": "HG"
+    },
+    "31": {
+        "class": "2",
+        "name": "베레타 38형",
+        "no": "31",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:30",
+        "type": "SMG"
+    },
+    "32": {
+        "class": "3",
+        "name": "마이크로 우지",
+        "no": "32",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:40",
+        "type": "SMG"
+    },
+    "33": {
+        "class": "2",
+        "name": "m45",
+        "no": "33",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:20",
+        "type": "SMG"
+    },
+    "34": {
+        "class": "3",
+        "name": "M1 개런드",
+        "no": "34",
+        "obtain": "제조, 전역 드랍",
+        "time": "04:00",
+        "type": "RF"
+    },
+    "35": {
+        "class": "3",
+        "name": "M1A1",
+        "no": "35",
+        "obtain": "6전역 한정 드랍",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "36": {
+        "class": "4",
+        "name": "스프링필드",
+        "no": "36",
+        "obtain": "제조, 전역 드랍",
+        "time": "04:25",
+        "type": "RF"
+    },
+    "37": {
+        "class": "3",
+        "name": "M14",
+        "no": "37",
+        "obtain": "제조, 전역 드랍, 지휘관 레벨 달성 임무 보상",
+        "time": "03:40",
+        "type": "RF"
+    },
+    "38": {
+        "class": "3",
+        "name": "M21",
+        "no": "38",
+        "obtain": "4전역 한정 드랍",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "39": {
+        "class": "4",
+        "name": "모신나강",
+        "no": "39",
+        "obtain": "제조, 전역 드랍",
+        "time": "04:10",
+        "type": "RF"
+    },
+    "40": {
+        "class": "2",
+        "name": "SVT-38",
+        "no": "40",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:30",
+        "type": "RF"
+    },
+    "41": {
+        "class": "2",
+        "name": "시모노프",
+        "no": "41",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:30",
+        "type": "RF"
+    },
+    "42": {
+        "class": "4",
+        "name": "PTRD",
+        "no": "42",
+        "obtain": "제조, 전역 드랍",
+        "time": "04:30",
+        "type": "RF"
+    },
+    "43": {
+        "class": "4",
+        "name": "SVD",
+        "no": "43",
+        "obtain": "제조",
+        "time": "03:30",
+        "type": "RF"
+    },
+    "44": {
+        "class": "3",
+        "name": "SV-98",
+        "no": "44",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:40",
+        "type": "RF"
+    },
+    "46": {
+        "class": "5",
+        "name": "Kar98k",
+        "no": "46",
+        "obtain": "제조, 특별 구원작전 이벤트 전역 드랍, 저체온증 이벤트 붉은 봉투 개봉",
+        "time": "04:40",
+        "type": "RF"
+    },
+    "47": {
+        "class": "2",
+        "name": "G43",
+        "no": "47",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:10",
+        "type": "RF"
+    },
+    "48": {
+        "class": "5",
+        "name": "WA2000",
+        "no": "48",
+        "obtain": "제조, 0-4 전역 드랍",
+        "time": "04:50",
+        "type": "RF"
+    },
+    "49": {
+        "class": "3",
+        "name": "56식 반",
+        "no": "49",
+        "obtain": "저체온증 이벤트 드랍",
+        "time": "00:00",
+        "type": "RF"
+    },
+    "5": {
+        "class": "2",
+        "name": "나강 리볼버",
+        "no": "5",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:20",
+        "type": "HG"
+    },
+    "50": {
+        "class": "5",
+        "name": "리엔필드",
+        "no": "50",
+        "obtain": "제조",
+        "time": "05:00",
+        "type": "RF"
+    },
+    "51": {
+        "class": "2",
+        "name": "FN-49",
+        "no": "51",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:10",
+        "type": "RF"
+    },
+    "52": {
+        "class": "2",
+        "name": "BM59",
+        "no": "52",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:20",
+        "type": "RF"
+    },
+    "53": {
+        "class": "5",
+        "name": "NTW-20",
+        "no": "53",
+        "obtain": "제조, 8-4E 전역 드랍",
+        "time": "04:45",
+        "type": "RF"
+    },
+    "54": {
+        "class": "4",
+        "name": "M16A1",
+        "no": "54",
+        "obtain": "제조불가, 4-6 클리어 임무 보상 / 메아리이벤트 7-1E 전역 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "55": {
+        "class": "4",
+        "name": "M4A1",
+        "no": "55",
+        "obtain": "제조불가, 2-6 클리어 임무 보상 / 메아리이벤트 7-3E 전역 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "56": {
+        "class": "4",
+        "name": "M4 SOPMOD II",
+        "no": "56",
+        "obtain": "제조불가, 3-3 클리어 임무 보상 / 메아리이벤트 7-5E 전역 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "57": {
+        "class": "4",
+        "name": "ST AR-15",
+        "no": "57",
+        "obtain": "제조불가, 3-6 클리어 임무 보상 / 메아리이벤트 7-2E 전역 드랍",
+        "time": "00:00",
+        "type": "AR"
+    },
+    "58": {
+        "class": "3",
+        "name": "AK-47",
+        "no": "58",
+        "obtain": "제조, 전역 드랍, 지휘관 레벨 달성 임무 보상",
+        "time": "03:20",
+        "type": "AR"
+    },
+    "6": {
+        "class": "3",
+        "name": "토카레프",
+        "no": "6",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:45",
+        "type": "HG"
+    },
+    "60": {
+        "class": "3",
+        "name": "AS Val",
+        "no": "60",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:30",
+        "type": "AR"
+    },
+    "61": {
+        "class": "3",
+        "name": "StG44",
+        "no": "61",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:00",
+        "type": "AR"
+    },
+    "62": {
+        "class": "5",
+        "name": "G41",
+        "no": "62",
+        "obtain": "제조, 전역 드랍",
+        "time": "04:05",
+        "type": "AR"
+    },
+    "63": {
+        "class": "2",
+        "name": "G3",
+        "no": "63",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:50",
+        "type": "AR"
+    },
+    "64": {
+        "class": "4",
+        "name": "G36",
+        "no": "64",
+        "obtain": "제조, 한국서버 사전예약 보상, 특별구호작전X 이벤트 전역 드랍",
+        "time": "03:40",
+        "type": "AR"
+    },
+    "65": {
+        "class": "5",
+        "name": "HK416",
+        "no": "65",
+        "obtain": "제조, 5-4E 전역 드랍",
+        "time": "03:55",
+        "type": "AR"
+    },
+    "66": {
+        "class": "4",
+        "name": "56-1식",
+        "no": "66",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:25",
+        "type": "AR"
+    },
+    "68": {
+        "class": "2",
+        "name": "L85A1",
+        "no": "68",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:50",
+        "type": "AR"
+    },
+    "69": {
+        "class": "4",
+        "name": "FAMAS",
+        "no": "69",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:30",
+        "type": "AR"
+    },
+    "7": {
+        "class": "4",
+        "name": "스테츠킨",
+        "no": "7",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:55",
+        "type": "HG"
+    },
+    "70": {
+        "class": "3",
+        "name": "FNC",
+        "no": "70",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:20",
+        "type": "AR"
+    },
+    "71": {
+        "class": "2",
+        "name": "갈릴",
+        "no": "71",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:40",
+        "type": "AR"
+    },
+    "72": {
+        "class": "4",
+        "name": "TAR-21",
+        "no": "72",
+        "obtain": "제조, 전역 드랍",
+        "time": "03:30",
+        "type": "AR"
+    },
+    "74": {
+        "class": "2",
+        "name": "SIG-510",
+        "no": "74",
+        "obtain": "제조, 전역 드랍",
+        "time": "02:40",
+        "type": "AR"
+    },
+    "75": {
+        "class": "4",
+        "name": "M1918",
+        "no": "75",
+        "obtain": "제조, 전역 드랍",
+        "time": "06:25",
+        "type": "MG"
+    },
+    "77": {
+        "class": "3",
+        "name": "M2HB",
+        "no": "77",
+        "obtain": "제조, 전역 드랍, 지휘관 레벨 달성 임무 보상",
+        "time": "06:10",
+        "type": "MG"
+    },
+    "78": {
+        "class": "4",
+        "name": "M60",
+        "no": "78",
+        "obtain": "제조, 전역 드랍",
+        "time": "06:10",
+        "type": "MG"
+    },
+    "79": {
+        "class": "3",
+        "name": "M249 SAW",
+        "no": "79",
+        "obtain": "5전역 한정드랍",
+        "time": "00:00",
+        "type": "MG"
+    },
+    "8": {
+        "class": "3",
+        "name": "마카로프",
+        "no": "8",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:40",
+        "type": "HG"
+    },
+    "80": {
+        "class": "3",
+        "name": "M1919A4",
+        "no": "80",
+        "obtain": "제조, 전역 드랍",
+        "time": "05:40",
+        "type": "MG"
+    },
+    "81": {
+        "class": "2",
+        "name": "LWMMG",
+        "no": "81",
+        "obtain": "제조, 전역 드랍",
+        "time": "05:10",
+        "type": "MG"
+    },
+    "82": {
+        "class": "2",
+        "name": "DP28",
+        "no": "82",
+        "obtain": "제조, 전역 드랍",
+        "time": "05:00",
+        "type": "MG"
+    },
+    "84": {
+        "class": "3",
+        "name": "RPD",
+        "no": "84",
+        "obtain": "로그인 보상, 큐브/큐브+ 이벤트 드랍",
+        "time": "00:00",
+        "type": "MG"
+    },
+    "85": {
+        "class": "4",
+        "name": "PK",
+        "no": "85",
+        "obtain": "제조, 전역 드랍",
+        "time": "06:30",
+        "type": "MG"
+    },
+    "86": {
+        "class": "3",
+        "name": "MG42",
+        "no": "86",
+        "obtain": "제조, 전역 드랍",
+        "time": "05:50",
+        "type": "MG"
+    },
+    "87": {
+        "class": "2",
+        "name": "MG34",
+        "no": "87",
+        "obtain": "제조, 전역 드랍",
+        "time": "05:00",
+        "type": "MG"
+    },
+    "88": {
+        "class": "4",
+        "name": "MG3",
+        "no": "88",
+        "obtain": "제조, 전역 드랍",
+        "time": "06:30",
+        "type": "MG"
+    },
+    "89": {
+        "class": "3",
+        "name": "브렌",
+        "no": "89",
+        "obtain": "제조, 전역 드랍",
+        "time": "05:20",
+        "type": "MG"
+    },
+    "9": {
+        "class": "3",
+        "name": "P38",
+        "no": "9",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:20",
+        "type": "HG"
+    },
+    "90": {
+        "class": "2",
+        "name": "FNP-9",
+        "no": "90",
+        "obtain": "제조, 전역 드랍, 업적:오 좋구만! 달성 보상",
+        "time": "00:25",
+        "type": "HG"
+    },
+    "91": {
+        "class": "2",
+        "name": "MP-446",
+        "no": "91",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:25",
+        "type": "HG"
+    },
+    "92": {
+        "class": "2",
+        "name": "Spectre M4",
+        "no": "92",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:20",
+        "type": "SMG"
+    },
+    "93": {
+        "class": "2",
+        "name": "IDW",
+        "no": "93",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:10",
+        "type": "SMG"
+    },
+    "94": {
+        "class": "2",
+        "name": "64식",
+        "no": "94",
+        "obtain": "제조, 전역 드랍",
+        "time": "01:25",
+        "type": "SMG"
+    },
+    "95": {
+        "class": "3",
+        "name": "한양조 88식",
+        "no": "95",
+        "obtain": "제조",
+        "time": "03:50",
+        "type": "RF"
+    },
+    "96": {
+        "class": "5",
+        "name": "그리즐리 MkV",
+        "no": "96",
+        "obtain": "제조",
+        "time": "01:10",
+        "type": "HG"
+    },
+    "97": {
+        "class": "5",
+        "name": "M950A",
+        "no": "97",
+        "obtain": "제조",
+        "time": "01:05",
+        "type": "HG"
+    },
+    "98": {
+        "class": "4",
+        "name": "SPP-1",
+        "no": "98",
+        "obtain": "제조불가, 큐브/큐브+ 이벤트 진행 보상, 딥 다이브 이벤트전역 드랍",
+        "time": "00:00",
+        "type": "HG"
+    },
+    "99": {
+        "class": "4",
+        "name": "Mk23",
+        "no": "99",
+        "obtain": "제조, 전역 드랍",
+        "time": "00:50",
+        "type": "HG"
+    }
 }
