@@ -39,6 +39,8 @@ UPGRADE_MESSAGE_5 = """도감 NO. : {0}
 """
 
 def upgrade_callback(bot, update):
+    query = update.callback_query
+    
     try:
         num, uid, option = query.data.split('_')
         if query.from_user.id != int(uid):
