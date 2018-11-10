@@ -8,14 +8,14 @@ def doll(bot, update):
         hour, minute, time = util.command_time(update)
         if time is None: return
 
-        doll = get_doll_by_time(time)
-        if doll is None:
+        doll_list = get_doll_by_time(time)
+        if len(doll_list) == 0:
             update.message.reply_text("DB에 존재하지 않는 시간입니다.")
             return
 
-        s = "" 
-        for obj in doll:
-            s += "{:02d}:{:02d}:00  ★{}  {}  {}\n".format(hour, minute, obj['class'], obj['type'], obj['name'])
+        s = ""
+        for doll in doll_list:
+            s += "{:02d}:{:02d}:00  ★{}  {}  {}\n".format(hour, minute, doll['class'], doll['type'], doll['name'])
             
         update.message.reply_text(s)
     except:

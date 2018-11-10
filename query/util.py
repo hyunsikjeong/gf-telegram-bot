@@ -17,7 +17,7 @@ def get_command(update):
 def command_time(update):
     time = get_command(update)
     try:
-        return (int(time) // 100, int(time) % 100, str(int(time)))
+        return (int(time) // 100, int(time) % 100, int(time))
     except:
         update.message.reply_text("올바르지 않은 입력입니다.")
         return (None, None, None)
