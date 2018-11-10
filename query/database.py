@@ -3,7 +3,10 @@ import json
 # TODO: merge all the files into one file
 equip_dict = json.load(open('dict/equip_dict.json', 'r', encoding='utf8'))
 doll_dict = json.load(open('dict/doll_dict.json', 'r', encoding='utf8'))
-alias_dict = json.load(open('dict/alias_dict.json', 'r', encoding='utf8'))
+alias_dict = dict()
+for num, doll in doll_dict.items():
+    for alias in doll['alias']:
+        alias_dict[alias] = num
 
 def find_by_alias(alias):
     if alias in alias_dict:
