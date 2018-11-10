@@ -18,14 +18,14 @@ def buff(bot, update):
         buff = doll['buff']
 
         # description
-        s = BUFF_MESSAGE.format(doll['no'], doll['name'], buff['buff_option'], buff['buff_desc'])
+        s = BUFF_MESSAGE.format(doll['no'], doll['name'], buff['option'], buff['desc'])
 
         # buff
         s += "```\n"
         for i in range(0, 9, 3):
             s += "+---+---+---+\n"
             for j in range(3):
-                c = buff['buff'][i+j]
+                c = buff['form'][i+j]
                 if c == '0': s += "|   "
                 elif c == '1': s += "| ! "
                 else: s += "| D "

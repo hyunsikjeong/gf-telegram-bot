@@ -47,18 +47,17 @@ def upgrade_callback(bot, update):
             return
 
         doll = get_doll_by_num(num)
-        buff = doll['buff']
         upgrade = doll['upgrade']
 
         if option == '1':
-
-            s = UPGRADE_MESSAGE_1.format(doll['no'], doll['name'], buff['buff_option'], upgrade['buff_desc'])
+            buff = upgrade['buff']
+            s = UPGRADE_MESSAGE_1.format(doll['no'], doll['name'], buff['option'], buff['desc'])
 
             s += "```\n"
             for i in range(0, 9, 3):
                 s += "+---+---+---+\n"
                 for j in range(3):
-                    c = buff['buff'][i+j]
+                    c = buff['form'][i+j]
                     if c == '0': s += "|   "
                     elif c == '1': s += "| ! "
                     else: s += "| D "
