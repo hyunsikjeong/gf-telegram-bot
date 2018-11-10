@@ -1,6 +1,6 @@
 import logging
 
-from .database import search_dict, stat_dict
+from .database import get_doll_by_num
 from . import util
 
 STAT_MESSAGE = """도감 NO. : {0}
@@ -12,10 +12,10 @@ def stat(bot, update):
     try:
         num = util.command_doll(update)
         if num is None: return
-        obj = search_dict[num]
-        stats = stat_dict[num]
+        doll = get_doll_by_num(num)
+        stats = doll['stats']
 
-        s = STAT_MESSAGE.format(obj['no'], obj['name'])
+        s = STAT_MESSAGE.format(doll['no'], doll['name'])
         for stat in stats:
             s += "{0}: {1}\n".format(stat[0], stat[1])
         

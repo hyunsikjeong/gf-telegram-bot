@@ -1,6 +1,6 @@
 import logging
 
-from .database import search_dict, buff_dict
+from .database import get_doll_by_num
 from . import util
 
 BUFF_MESSAGE = """도감 NO. : {0}
@@ -14,11 +14,11 @@ def buff(bot, update):
     try:
         num = util.command_doll(update)
         if num is None: return
-        obj = search_dict[num]
-        buff = buff_dict[num]
+        doll = get_doll_by_num(num)
+        buff = doll['buff']
 
         # description
-        s = BUFF_MESSAGE.format(obj['no'], obj['name'], buff['buff_option'], buff['buff_desc'])
+        s = BUFF_MESSAGE.format(doll['no'], doll['name'], buff['buff_option'], buff['buff_desc'])
 
         # buff
         s += "```\n"

@@ -1,7 +1,7 @@
 import logging
 import re
 
-from .database import alias_dict
+from .database import find_by_alias
 
 def get_command(update):
     logger = logging.getLogger('command')
@@ -24,7 +24,8 @@ def command_time(update):
 
 def command_doll(update):
     alias = get_command(update).lower()
-    if alias not in alias_dict:
+    doll_num = find_by_alias(alias)
+    if doll_num is None:
         update.message.reply_text("DB에서 해당 별명을 찾을 수 없습니다.")
         return None
-    return alias_dict[alias]
+    return doll_num

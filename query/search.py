@@ -1,6 +1,6 @@
 import logging
 
-from .database import search_dict
+from .database import get_doll_by_num
 from . import util
 
 SEARCH_MESSAGE_WITH_TIME = """도감 NO. : {0}
@@ -22,14 +22,14 @@ def search(bot, update):
     try:
         num = util.command_doll(update)
         if num is None: return
-        obj = search_dict[num]
+        doll = get_doll_by_num(num)
 
-        if obj['time'] != "00:00":
-            s = SEARCH_MESSAGE_WITH_TIME.format(obj['no'], obj['name'], obj['class'],
-                                                obj['type'], obj['obtain'], obj['time'])
+        if doll['time'] != "00:00":
+            s = SEARCH_MESSAGE_WITH_TIME.format(doll['no'], doll['name'], doll['class'],
+                                                doll['type'], doll['obtain'], doll['time'])
         else:
-            s = SEARCH_MESSAGE_WITHOUT_TIME.format(obj['no'], obj['name'], obj['class'],
-                                                    obj['type'], obj['obtain'])
+            s = SEARCH_MESSAGE_WITHOUT_TIME.format(doll['no'], doll['name'], doll['class'],
+                                                    doll['type'], doll['obtain'])
         update.message.reply_text(s)
     except:
         logger = logging.getLogger('query')

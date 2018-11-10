@@ -1,6 +1,6 @@
 import logging
 
-from .database import search_dict, skill_dict
+from .database import get_doll_by_num
 from . import util
 
 SKILL_MESSAGE = """도감 NO. : {0}
@@ -15,10 +15,10 @@ def skill(bot, update):
     try:
         num = util.command_doll(update)
         if num is None: return
-        obj = search_dict[num]
-        skill = skill_dict[num]
+        doll = get_doll_by_num(num)
+        skill = doll['skill']
 
-        s = SKILL_MESSAGE.format(obj['no'], obj['name'], skill['name'], skill['desc'])
+        s = SKILL_MESSAGE.format(doll['no'], doll['name'], skill['name'], skill['desc'])
 
         for i in range(0, len(skill['spec'])):
             s += "{0}: {1}\n".format(skill['spec'][i][0], skill['spec'][i][1])

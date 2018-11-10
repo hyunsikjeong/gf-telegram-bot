@@ -1,7 +1,7 @@
 import logging
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from .database import search_dict, upgrade_dict, buff_dict
+from .database import get_doll_by_num
 from . import util
 
 UPGRADE_MESSAGE_1 = """도감 NO. : {0}
@@ -46,13 +46,13 @@ def upgrade_callback(bot, update):
         if query.from_user.id != int(uid):
             return
 
-        obj = search_dict[num]
-        upgrade = upgrade_dict[num]
+        doll = get_doll_by_num(num)
+        buff = doll['buff']
+        upgrade = doll['upgrade']
 
         if option == '1':
-            buff = buff_dict[num]
 
-            s = UPGRADE_MESSAGE_1.format(obj['no'], obj['name'], buff['buff_option'], upgrade['buff_desc'])
+            s = UPGRADE_MESSAGE_1.format(doll['no'], doll['name'], buff['buff_option'], upgrade['buff_desc'])
 
             s += "```\n"
             for i in range(0, 9, 3):
@@ -67,22 +67,22 @@ def upgrade_callback(bot, update):
             s += "+---+---+---+```"
         elif option == '2':
             skill = upgrade['orig_skill']
-            s = UPGRADE_MESSAGE_2.format(obj['no'], obj['name'], skill['name'], skill['desc'])
+            s = UPGRADE_MESSAGE_2.format(doll['no'], doll['name'], skill['name'], skill['desc'])
 
             for i in range(0, len(skill['spec'])):
                 s += "{0}: {1}\n".format(skill['spec'][i][0], skill['spec'][i][1])
         elif option == '3':
             skill = upgrade['new_skill']
-            s = UPGRADE_MESSAGE_3.format(obj['no'], obj['name'], skill['name'], skill['desc'])
+            s = UPGRADE_MESSAGE_3.format(doll['no'], doll['name'], skill['name'], skill['desc'])
 
             for i in range(0, len(skill['spec'])):
                 s += "{0}: {1}\n".format(skill['spec'][i][0], skill['spec'][i][1])
         elif option == '4':
-            s = UPGRADE_MESSAGE_4.format(obj['no'], obj['name'], upgrade['equip'])
+            s = UPGRADE_MESSAGE_4.format(doll['no'], doll['name'], upgrade['equip'])
         elif option == '5':
             stats = upgrade['stat']
 
-            s = UPGRADE_MESSAGE_5.format(obj['no'], obj['name'])
+            s = UPGRADE_MESSAGE_5.format(doll['no'], doll['name'])
             for stat in stats:
                 s += "{0}: {1}\n".format(stat[0], stat[1])
         else:
@@ -100,20 +100,21 @@ def upgrade(bot, update):
     try:
         num = util.command_doll(update)
         if num is None: return
-        obj = search_dict[num]
-        if num not in upgrade_dict:
+
+        doll = get_doll_by_num(num)
+        if 'upgrade' not in doll:
             update.message.reply_text("개장 정보가 없거나, 개장이 불가능한 인형입니다.")
             return
 
-        s = "선택한 인형: {}\n보고 싶은 개장 정보를 선택하세요.".format(obj['name'])
+        s = "선택한 인형: {}\n보고 싶은 개장 정보를 선택하세요.".format(doll['name'])
 
         uid = update.message.from_user.id
         button_list = [
-            [InlineKeyboardButton("1단계 버프", callback_data="{}_{}_1".format(obj['no'], uid)),
-            InlineKeyboardButton("1단계 스킬", callback_data="{}_{}_2".format(obj['no'], uid))],
-            [InlineKeyboardButton("2단계 추가 스킬", callback_data="{}_{}_3".format(obj['no'], uid)),
-            InlineKeyboardButton("3단계 전용 장비", callback_data="{}_{}_4".format(obj['no'], uid))],
-            [InlineKeyboardButton("스탯 변화", callback_data="{}_{}_5".format(obj['no'], uid))]
+            [InlineKeyboardButton("1단계 버프", callback_data="{}_{}_1".format(doll['no'], uid)),
+            InlineKeyboardButton("1단계 스킬", callback_data="{}_{}_2".format(doll['no'], uid))],
+            [InlineKeyboardButton("2단계 추가 스킬", callback_data="{}_{}_3".format(doll['no'], uid)),
+            InlineKeyboardButton("3단계 전용 장비", callback_data="{}_{}_4".format(doll['no'], uid))],
+            [InlineKeyboardButton("스탯 변화", callback_data="{}_{}_5".format(doll['no'], uid))]
         ]
         reply_markup = InlineKeyboardMarkup(button_list)
         update.message.reply_text(text=s, reply_markup=reply_markup)
