@@ -1,4 +1,5 @@
 from telegram.ext import Updater, CallbackQueryHandler
+import os
 import json
 import logging
 
@@ -22,7 +23,9 @@ def init_logger(name, fileLevel=logging.DEBUG, streamLevel=logging.ERROR):
     streamHandler.setFormatter(formatter)
     logger.addHandler(streamHandler)
 
-if __name__ == "__main__":    
+if __name__ == "__main__":
+    if not os.path.isdir('./log'):
+        os.mkdir('./log')
     init_logger('gftrack')
     init_logger('command', fileLevel=logging.INFO)
     init_logger('query')
