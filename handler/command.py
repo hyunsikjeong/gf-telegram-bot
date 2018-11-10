@@ -5,7 +5,7 @@ from telegram import Update
 
 # Extended Command Handler for '!' (Exclamation mark)
 # Main code is from telegram.ext.CommandHandler
-class ExcCommandHandler(CommandHandler):
+class ExtendedCommandHandler(CommandHandler):
     def check_update(self, update):
 
         if (isinstance(update, Update)

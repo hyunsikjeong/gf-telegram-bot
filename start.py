@@ -2,8 +2,8 @@ from telegram.ext import Updater, CallbackQueryHandler
 import json
 import logging
 
-import exc
-import stream
+from handler.command import ExtendedCommandHandler
+from handler import twitter
 from query import *
 
 def init_logger(name, fileLevel=logging.DEBUG, streamLevel=logging.ERROR):
@@ -39,14 +39,14 @@ if __name__ == "__main__":
                  (['stat', '스탯', 'ㅅㅌ'], stat.stat),
                  (['skill', '스킬', 'ㅅㅋ'], skill.skill),
                  (['upgrade', '개장', 'ㄱㅈ'], upgrade.upgrade),
-                 (['pin'], stream.pin),
-                 (['unpin'], stream.unpin)
+                 (['pin'], twitter.pin),
+                 (['unpin'], twitter.unpin)
                  ]
 
     for (command_list, command_function) in commands:
-        dispatcher.add_handler(exc.ExcCommandHandler(command_list, command_function))
+        dispatcher.add_handler(ExtendedCommandHandler(command_list, command_function))
     dispatcher.add_handler(CallbackQueryHandler(upgrade.upgrade_callback))
 
-    stream.start_tracking(setting, updater)
+    twitter.start_tracking(setting, updater)
     updater.start_polling(allowed_updates=['message', 'channel_post', 'callback_query'])
     updater.idle()
