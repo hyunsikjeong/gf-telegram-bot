@@ -24,6 +24,7 @@ def get_doll_by_time(time):
     return doll_list
 
 def get_equip_by_time(time):
+    time = str(time)
     if time not in equip_dict:
         return None
     return equip_dict[time]
