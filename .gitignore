@@ -8,6 +8,9 @@ log/*.log
 # Untrack nohup output
 nohup.out
 
+# Untrack alert chatid list
+alert_chatid.json
+
 # From https://github.com/github/gitignore/blob/master/Python.gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
