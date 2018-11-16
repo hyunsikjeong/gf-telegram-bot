@@ -10,6 +10,7 @@ except:
     ALERT_CHATID_LIST = []
     json.dump(ALERT_CHATID_LIST, open('alert_chatid.json', 'w'))
 
+
 class GFTracker(tweepy.StreamListener):
     def __init__(self, userid, updater, api=None):
         super(GFTracker, self).__init__(api=api)
@@ -26,15 +27,18 @@ class GFTracker(tweepy.StreamListener):
             return
         # Check whether it is a reply to someone else
         elif status.in_reply_to_user_id_str is not None and self.userid != status.in_reply_to_user_id:
-            logger.debug("In reply to user ID is different: " + status.in_reply_to_user_id_str)
-            return 
+            logger.debug("In reply to user ID is different: " +
+                         status.in_reply_to_user_id_str)
+            return
         elif hasattr(status, 'retweeted_status'):
-            logger.debug("It is a retweet of another user's tweet: " + status.retweeted_status.user.id_str)
-            return 
-        
+            logger.debug("It is a retweet of another user's tweet: " +
+                         status.retweeted_status.user.id_str)
+            return
+
         tweetid = status.id
         username = status.user.screen_name
-        txt = "[새 공식 트윗] https://twitter.com/{}/status/{}".format(username, tweetid)
+        txt = "[새 공식 트윗] https://twitter.com/{}/status/{}".format(
+            username, tweetid)
 
         logger.debug("Sending messages: " + txt)
 
@@ -49,7 +53,8 @@ class GFTracker(tweepy.StreamListener):
                 # Check: https://core.telegram.org/bots/faq#how-can-i-message-all-of-my-bot-39s-subscribers-at-once
                 time.sleep(3)
             except Unauthorized:
-                logger.info("Unauthrized user: deleting user id " + str(chatid))
+                logger.info("Unauthrized user: deleting user id " +
+                            str(chatid))
                 ALERT_CHATID_LIST.remove(chatid)
                 remove_flag = True
             except:
@@ -66,7 +71,7 @@ class GFTracker(tweepy.StreamListener):
     def on_error(self, status_code):
         logger = logging.getLogger('gftrack')
         logger.error("on_error called: {}".format(status_code))
-        return True # Always reconnect
+        return True  # Always reconnect
 
 
 # /pin command
@@ -78,7 +83,9 @@ def pin(bot, update):
 
     ALERT_CHATID_LIST.append(chat_id)
     json.dump(ALERT_CHATID_LIST, open('alert_chatid.json', 'w'))
-    update.message.reply_text("pin을 완료했습니다. 이제 새 공식 트윗이 올라오면 bot이 해당 트윗을 메세지로 보냅니다.")
+    update.message.reply_text(
+        "pin을 완료했습니다. 이제 새 공식 트윗이 올라오면 bot이 해당 트윗을 메세지로 보냅니다.")
+
 
 # /unpin command
 def unpin(bot, update):
@@ -91,9 +98,12 @@ def unpin(bot, update):
     json.dump(ALERT_CHATID_LIST, open('alert_chatid.json', 'w'))
     update.message.reply_text("unpin을 완료했습니다. 다시 사용하고 싶으시다면 pin 명령어를 사용해주세요.")
 
+
 def start_tracking(setting, updater):
-    auth = tweepy.auth.OAuthHandler(setting['tw_consumer_key'], setting['tw_consumer_secret'])
-    auth.set_access_token(setting['tw_access_token'], setting['tw_access_secret'])
+    auth = tweepy.auth.OAuthHandler(setting['tw_consumer_key'],
+                                    setting['tw_consumer_secret'])
+    auth.set_access_token(setting['tw_access_token'],
+                          setting['tw_access_secret'])
 
     api = tweepy.API(auth)
     user = api.get_user(screen_name=setting['tw_gf_bot_id'])

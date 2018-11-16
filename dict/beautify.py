@@ -11,4 +11,9 @@ for file in os.listdir():
                 for idx in range(len(data[num]['alias'])):
                     data[num]['alias'][idx] = data[num]['alias'][idx].lower()
                 data[num]['alias'] = sorted(data[num]['alias'])
-        json.dump(data, open(file, 'w', encoding='utf8'), ensure_ascii=False, indent=4, sort_keys=True)
+        json.dump(
+            data,
+            open(file, 'w', encoding='utf8'),
+            ensure_ascii=False,
+            indent=4,
+            sort_keys=True)

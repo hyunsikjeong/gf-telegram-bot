@@ -1,1 +1,3 @@
-__all__ = ["buff", "doll", "equip", "help", "search", "skill", "stat", "upgrade"]
+__all__ = [
+    "buff", "doll", "equip", "help", "search", "skill", "stat", "upgrade"
+]

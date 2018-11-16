@@ -24,5 +24,6 @@ HELP_MESSAGE = """사용법:
 
 모든 명령어는 / 대신 !의 사용이 가능합니다."""
 
+
 def help(bot, update):
     update.message.reply_text(HELP_MESSAGE)

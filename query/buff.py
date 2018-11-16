@@ -10,25 +10,31 @@ BUFF_MESSAGE = """도감 NO. : {0}
 버프 형태:
 """
 
+
 def buff(bot, update):
     try:
         num = util.command_doll(update)
-        if num is None: return
+        if num is None:
+            return
         doll = get_doll_by_num(num)
         buff = doll['buff']
 
         # description
-        s = BUFF_MESSAGE.format(doll['no'], doll['name'], buff['option'], buff['desc'])
+        s = BUFF_MESSAGE.format(doll['no'], doll['name'], buff['option'],
+                                buff['desc'])
 
         # buff
         s += "```\n"
         for i in range(0, 9, 3):
             s += "+---+---+---+\n"
             for j in range(3):
-                c = buff['form'][i+j]
-                if c == '0': s += "|   "
-                elif c == '1': s += "| ! "
-                else: s += "| D "
+                c = buff['form'][i + j]
+                if c == '0':
+                    s += "|   "
+                elif c == '1':
+                    s += "| ! "
+                else:
+                    s += "| D "
             s += "|\n"
 
         s += "+---+---+---+```"
