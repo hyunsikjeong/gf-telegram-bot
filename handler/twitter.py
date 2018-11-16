@@ -4,7 +4,11 @@ import tweepy
 import time
 from telegram.error import Unauthorized
 
-ALERT_CHATID_LIST = json.load(open('alert_chatid.json'))
+try:
+    ALERT_CHATID_LIST = json.load(open('alert_chatid.json'))
+except:
+    ALERT_CHATID_LIST = []
+    json.dump(ALERT_CHATID_LIST, open('alert_chatid.json', 'w'))
 
 class GFTracker(tweepy.StreamListener):
     def __init__(self, userid, updater, api=None):
