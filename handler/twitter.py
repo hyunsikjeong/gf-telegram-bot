@@ -1,6 +1,6 @@
 import sys, traceback
 import logging, json
-import tweepy
+import threading, queue, oauth2, urllib
 import time
 from telegram.error import Unauthorized
 
@@ -11,43 +11,37 @@ except:
     json.dump(ALERT_CHATID_LIST, open('alert_chatid.json', 'w'))
 
 
-class GFTracker(tweepy.StreamListener):
-    def __init__(self, userid, updater, api=None):
-        super(GFTracker, self).__init__(api=api)
-        self.userid = userid
-        self.updater = updater
+def oauth_req(url, args, setting):
+    url = url + urllib.parse.urlencode(args)
+    consumer = oauth2.Consumer(
+        key=setting['tw_consumer_key'], secret=setting['tw_consumer_secret'])
+    token = oauth2.Token(
+        key=setting['tw_access_token'], secret=setting['tw_access_secret'])
+    client = oauth2.Client(consumer, token)
+    resp, content = client.request(url, method="GET", body=b"", headers=None)
 
-    def on_status(self, status):
-        logger = logging.getLogger('gftrack')
-        logger.debug("Checking new tweet id:{}".format(status.id))
+    content = json.loads(content.decode("utf-8"))
+    print(content)
+    if 'errors' not in content:
+        return content
 
-        # Check its writer
-        if self.userid != status.user.id:
-            logger.debug("User ID is different: " + status.user.id_str)
-            return
-        # Check whether it is a reply to someone else
-        elif status.in_reply_to_user_id_str is not None and self.userid != status.in_reply_to_user_id:
-            logger.debug("In reply to user ID is different: " +
-                         status.in_reply_to_user_id_str)
-            return
-        elif hasattr(status, 'retweeted_status'):
-            logger.debug("It is a retweet of another user's tweet: " +
-                         status.retweeted_status.user.id_str)
-            return
 
-        tweetid = status.id
-        username = status.user.screen_name
-        txt = "[새 공식 트윗] https://twitter.com/{}/status/{}".format(
-            username, tweetid)
+message_queue = queue.Queue()
 
-        logger.debug("Sending messages: " + txt)
 
+def send_message(updater):
+    logger = logging.getLogger('gftrack')
+    while True:
+        print("send_message")
+        if message_queue.empty():
+            time.sleep(3)
+            continue
+        message = message_queue.get()
         remove_flag = False
-
         for chatid in ALERT_CHATID_LIST:
             try:
                 logger.debug("Sent message to " + str(chatid))
-                self.updater.bot.send_message(chat_id=chatid, text=txt)
+                updater.bot.send_message(chat_id=chatid, text=message)
 
                 # To avoid telegram API limit
                 # Check: https://core.telegram.org/bots/faq#how-can-i-message-all-of-my-bot-39s-subscribers-at-once
@@ -63,15 +57,49 @@ class GFTracker(tweepy.StreamListener):
         if remove_flag:
             json.dump(ALERT_CHATID_LIST, open('alert_chatid.json', 'w'))
 
-    def on_exception(self, exception):
-        logger = logging.getLogger('gftrack')
-        logger.error("on_exception called: \n{}".format(exception))
-        return
 
-    def on_error(self, status_code):
-        logger = logging.getLogger('gftrack')
-        logger.error("on_error called: {}".format(status_code))
-        return True  # Always reconnect
+def track_twitter(setting, updater):
+    logger = logging.getLogger('gftrack')
+    logger.debug("Starting tracking Twitter account {}".format(
+        setting['tw_gf_bot_id']))
+    base_url = 'https://api.twitter.com/1.1/statuses/user_timeline.json?'
+    since_id = None
+
+    while True:
+        print("track_twitter")
+        try:
+            if since_id is None:
+                args = {
+                    'screen_name': setting['tw_gf_bot_id'],
+                    'exclude_replies': 'true',
+                    'include_rts': 'false',
+                    'count': '1'
+                }
+                content = oauth_req(base_url, args, setting)
+                if content is not None:
+                    since_id = content[0]['id']
+                    logger.debug("Latest Tweet ID: {}".format(since_id))
+            else:
+                args = {
+                    'screen_name': setting['tw_gf_bot_id'],
+                    'exclude_replies': 'true',
+                    'include_rts': 'false',
+                    'since_id': since_id
+                }
+                content = oauth_req(base_url, args, setting)
+                if content is not None:
+                    for tweet in content:
+                        since_id = max(since_id, tweet['id'])
+                        logger.debug("Latest Tweet ID: {}".format(since_id))
+
+                        txt = "[새 공식 트윗] https://twitter.com/{}/status/{}".format(
+                            setting['tw_gf_bot_id'], tweet['id'])
+
+                        message_queue.put(txt)
+                        logger.debug("Put message into the queue: " + txt)
+        except:
+            logger.exception("Unhandled Exception: ")
+        time.sleep(1.5)
 
 
 # /pin command
@@ -100,14 +128,11 @@ def unpin(bot, update):
 
 
 def start_tracking(setting, updater):
-    auth = tweepy.auth.OAuthHandler(setting['tw_consumer_key'],
-                                    setting['tw_consumer_secret'])
-    auth.set_access_token(setting['tw_access_token'],
-                          setting['tw_access_secret'])
-
-    api = tweepy.API(auth)
-    user = api.get_user(screen_name=setting['tw_gf_bot_id'])
-    userid = user.id
-
-    stream = tweepy.Stream(auth, GFTracker(userid, updater), timeout=None)
-    stream.filter([str(userid)], None, async=True)
+    message_thread = threading.Thread(target=send_message, args=(updater, ))
+    message_thread.start()
+    twitter_thread = threading.Thread(
+        target=track_twitter, args=(
+            setting,
+            updater,
+        ))
+    twitter_thread.start()
