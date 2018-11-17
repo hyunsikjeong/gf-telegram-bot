@@ -1,2 +1,2 @@
-tweepy==3.5.0
+oauth2==1.9.0.post1
 python_telegram_bot==9.0.0
