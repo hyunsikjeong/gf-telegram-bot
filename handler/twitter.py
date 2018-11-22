@@ -21,7 +21,6 @@ def oauth_req(url, args, setting):
     resp, content = client.request(url, method="GET", body=b"", headers=None)
 
     content = json.loads(content.decode("utf-8"))
-    print(content)
     if 'errors' not in content:
         return content
 
@@ -32,7 +31,6 @@ message_queue = queue.Queue()
 def send_message(updater):
     logger = logging.getLogger('gftrack')
     while True:
-        print("send_message")
         if message_queue.empty():
             time.sleep(3)
             continue
@@ -66,7 +64,6 @@ def track_twitter(setting, updater):
     since_id = None
 
     while True:
-        print("track_twitter")
         try:
             if since_id is None:
                 args = {
